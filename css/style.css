@@ -1,0 +1,980 @@
+/*
+Theme Name: QomLug
+Author: QomLug
+Author URI: https://Qomlug.ir
+Description: QomLug Theme
+Version: 1.0
+
+
+*/
+@font-face {
+	font-family: "yekan";
+	src: url(../fonts/Yekan.eot);
+	src: url(../fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(../fonts/Yekan.woff) format("woff"), url(../fonts/Yekan.ttf) format("truetype"), url(../fonts/Yekan.svg#BYekan) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/**
+ * 1.0 - Reset
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: "yekan" , BYekan ,tahoma;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+
+}
+
+html {
+
+	font-size: 62.5%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #fafafa;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	direction:rtl;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+section {
+	display: block;
+}
+
+
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: right;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	quotes: none;
+}
+
+a:focus {
+	outline: 2px solid #c1c1c1;
+	outline: 2px solid rgba(51, 51, 51, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+/**
+ * 3.0 Typography
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #333;
+	font-family: BYekan,"yekan",tahoma;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 1.6em;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 4px solid #707070;
+	border-left: 4px solid rgba(51, 51, 51, 0.7);
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-style: italic;
+	line-height: 1.6667;
+	margin-bottom: 1.6667em;
+	padding-left: 0.7778em;
+}
+
+blockquote p {
+	margin-bottom: 1.6667em;
+}
+
+blockquote > p:last-child {
+	margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+	color: #333;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-family: BYekan,"yekan",tahoma;
+	line-height: 1.6;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: 400;
+}
+
+address {
+	font-style: italic;
+	margin: 0 0 1.6em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: Inconsolata, monospace;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre {
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.01);
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+	line-height: 1.2;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 0.8em;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted #eaeaea;
+	border-bottom: 1px dotted rgba(51, 51, 51, 0.1);
+	cursor: help;
+}
+
+mark,
+ins {
+	background-color: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/**
+ * 4.0 Elements
+ */
+
+hr {
+	background-color: #eaeaea;
+	background-color: rgba(51, 51, 51, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.6em;
+}
+
+dl {
+	margin-bottom: 1.6em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 1.6em;
+}
+
+table,
+th,
+td {
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 1.6em;
+	table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	font-weight: 700;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+}
+
+th, td {
+	padding: 0.4em;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+del {
+	opacity: 0.8;
+}
+
+
+/**
+ * 5.0 Forms
+ */
+
+button,
+input,
+select,
+textarea {
+	background-color: #f7f7f7;
+	border-radius: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+input,
+textarea {
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow on iOS inputs */
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+}
+
+input:focus,
+textarea:focus {
+	background-color: #fff;
+	border: 1px solid #c1c1c1;
+	border: 1px solid rgba(51, 51, 51, 0.3);
+	color: #333;
+}
+
+input:focus,
+select:focus {
+	outline: 2px solid #c1c1c1;
+	outline: 2px solid rgba(51, 51, 51, 0.3);
+}
+
+button[disabled],
+input[disabled],
+select[disabled],
+textarea[disabled] {
+	cursor: default;
+	opacity: .5;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	background-color: #333;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: BYekan,"yekan",tahoma;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 0.7917em 1.5em;
+	text-transform: uppercase;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+	background-color: #707070;
+	background-color: rgba(51, 51, 51, 0.7);
+	outline: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	padding: 0.375em;
+	width: 100%;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	outline: 0;
+}
+
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+
+.search-form input[type="submit"],
+.widget .search-form input[type="submit"] {
+	padding: 0;
+}
+
+
+
+/**
+ * 6.1 Links
+ */
+
+
+
+/**
+ * 6.2 Menus
+ */
+
+.slicknav_menu {
+	display:none;
+}
+
+nav {
+    display: block;
+	background-color:#0C0C0C;
+	z-index:999;
+	top:0;
+	margin:0 auto;
+	width:96%;
+	padding-right:4%;
+	padding-top:10px;
+  }
+  nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  #menu a {
+    display:block;
+    background: #0C0C0C;
+    color:#fff;
+    text-decoration: none;
+    padding: .8em 1.8em;
+    font-size: 80%;
+    position: relative;
+  }
+  #menu{
+    vertical-align: top;
+    display: inline-block;
+
+  }
+  #menu li{position: relative;}
+  #menu > li {
+    float:right;
+    border-bottom: 4px #05A8CD solid;
+    margin-right: 1px;
+  }
+  #menu > li > a {
+    margin-bottom:1px;
+
+  }
+  #menu > li:hover , #menu > li:hover >a{  border-bottom-color:#05A8CD;}
+  #menu li:hover > a { color:#05A8CD; }
+
+  #menu > li:last-child  {
+
+  	margin-right: 0;
+  }
+
+  #menu li li a { margin-top:1px}
+
+
+
+    #menu li a:first-child:nth-last-child(2):before {
+     content:"";
+     position: absolute;
+     height:0;
+     width: 0;
+     border: 5px solid transparent;
+     top: 50% ;
+     left:5px;
+   }
+
+
+
+
+
+   /* submenu positioning*/
+#menu ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid #00DCDC;
+  z-index: 1;
+  right: -99999em;
+}
+#menu > li:hover > ul {
+  right: auto;
+  padding-top: 5px  ;
+  min-width: 100%;
+}
+#menu > li li ul {  border-right:1px solid #fff;}
+
+
+#menu > li li:hover > ul {
+ /* margin-left: 1px */
+  right: 100%;
+  top: -1px;
+}
+/* arrow hover styling */
+#menu > li > a:first-child:nth-last-child(2):before {
+  border-top-color: #aaa;
+}
+#menu > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent;
+  border-bottom-color: #05A8CD;
+  margin-top:-5px
+}
+#menu li li > a:first-child:nth-last-child(2):before {
+  border-right-color: #aaa;
+  margin-top: -5px
+}
+#menu li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent;
+  border-right-color: #05A8CD;
+  right: 10px;
+}
+@media screen and (max-width: 40em) {
+	.js #menu {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+
+
+
+/**
+ * 8.0 Alignments
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+	clear: both;
+	margin-top: 0.4em;
+	margin-bottom: 1.6em;
+}
+
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+	margin-bottom: 1.2em;
+}
+
+
+/**
+ * 9.0 Clearings
+ */
+
+.clear:before,
+.clear:after,
+.site:before,
+.site:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-content:before,
+.site-content:after,
+.nav-links:before,
+.nav-links:after,
+.comment-navigation:before,
+.comment-navigation:after,
+.social-navigation ul:before,
+.social-navigation ul:after,
+.textwidget:before,
+.textwidget:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.site:after,
+.entry-content:after,
+.comment-content:after,
+.site-content:after,
+.nav-links:after,
+.comment-navigation:after,
+.social-navigation ul:after,
+.textwidget:after {
+	clear: both;
+}
+
+
+/**
+ * 10.0 Header
+ */
+header {
+position:relative;
+   background: rgb(0, 0, 0); /* The Fallback */
+   background: rgba(0, 0, 0, 0.95);
+/* width:90%; */
+margin:0 auto;
+margin-top:0;
+padding: 10px;
+}
+
+header img {
+    position: relative;
+    display: block;
+    margin: auto;
+    /*margin-top: 53px;*/
+    width: 68px;
+
+}
+#head {
+
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+/**
+ * 11.0 Widgets
+ */
+
+
+
+
+
+/**
+ * 12.0 Content
+ */
+.content {
+	clear : both;
+	margin: 0 auto;
+	width: 90%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+.main {
+	box-sizing: border-box;
+    padding: 10px;
+    width: 98%;
+    margin: 0.5%;
+
+
+}
+
+.main h3 {
+	
+	font-size: 1.6rem;
+	padding: 10px;
+	text-align: center;
+	margin-bottom :10px;
+}
+.main p,.lmain p,.rmain p {
+	
+	padding: 10px;
+
+
+}
+
+.rmain, .lmain {
+	box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    width: 98%;
+    
+    margin: 0.5%;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+.rmain h3, .lmain h3 {
+	
+	font-size: 1.6rem;
+	padding: 10px;
+	text-align: center;
+}
+.rmain ul, .lmain ul,.main ul {
+	list-style-type: square;
+	list-style-position: inside;
+    padding: 0px;
+    margin: 0px;
+}
+
+.rmain ul li, .lmain ul li,.main ul li {
+	margin: 15px; 
+	
+}
+
+.blue {
+	background-color: LightBlue;
+}
+.green {
+	background-color: LightGreen;
+}
+.red {
+	background-color: #F75D59;
+}
+
+.content img {
+max-width:100%;
+}
+
+/**
+ * 12.1 Posts and pages
+ */
+
+
+
+/**
+ * 12.2 Post Formats
+ */
+
+
+/**
+ * 12.3 cols
+ */
+
+
+
+/**
+ * 13.0 Footer
+ */
+footer {
+position:relative;
+clear : both;
+top:15px;
+background-color:#010101;
+width:100%;
+margin:0 auto;
+height:50px;
+color:#b5b5b5;
+
+}
+
+
+.cpright {
+color:#fff;
+width:100%;
+position:absolute;
+bottom:10px;
+text-align:center;
+}
+/**
+ * 14.0 Media
+ */
+
+.site .avatar {
+	border-radius: 50%;
+}
+
+
+audio,
+canvas {
+	display: inline-block;
+}
+
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+	margin-bottom: 0;
+}
+
+
+
+
+
+/**
+ * 15.0 Media Queries
+ */
+
+/*
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+/**
+ * 15.1 Mobile Large 620px
+ */
+
+@media screen and (min-width: 38.75em) {
+
+
+
+}
+
+
+/**
+ * 15.2 Tablet Small 740px
+ */
+
+@media screen and (min-width: 46.25em) {
+
+}
+
+
+/**
+ * 15.3 Tablet Large 880px
+ */
+
+@media screen and (min-width: 55em) {
+
+
+}
+
+
+/**
+ * 15.4 Desktop Small 955px
+ */
+
+@media screen and (min-width: 59.6875em) {
+
+.rmain, .lmain {
+	box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    width: 49%;
+    
+    margin: 0.5%;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+}
+
+
+/**
+ * 15.5 Desktop Medium 1100px
+ */
+
+@media screen and (min-width: 68.75em) {
+
+
+}
+
+
+/**
+ * 15.6 Desktop Large 1240px
+ */
+
+@media screen and (min-width: 77.5em) {
+
+
+}
+
+
+/**
+ * 15.7 Desktop X-Large 1403px
+ */
+
+@media screen and (min-width: 87.6875em) {
+	body:before {
+		width: -webkit-calc(50% - 289px);
+		width: calc(50% - 289px);
+	}
+}

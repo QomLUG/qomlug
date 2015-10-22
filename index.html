@@ -47,12 +47,9 @@
 
 	<div class="lmain">
 		<h3 class="green">گزارش جلسات</h3>
-		
-		<ul>
-				<li>تشکیل جلسه ی اعضای قدیمی و ثابت لاگ</li>
-			
-		</ul>
-		
+		<div id="rep">
+
+		</div>
 	</div>
 	<div class="rmain">
 		<h3 class="blue">قم لاگ چیست ؟</h3>
@@ -101,7 +98,32 @@
 <footer>
 <div class="cpright">گروه کاربران لینوکس استان قم به هیچ نهاد و شرکت خصوصی و دولتی وابسته نمیباشد.</div>
 </footer>
+<!-- read links of reports -->
+<script type="text/javascript">
+var xmlhttp = new XMLHttpRequest();
+var url = "./pages/reports.json";
 
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var myArr = JSON.parse(xmlhttp.responseText);
+        myFunction(myArr);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+    var out = "<ul>";
+    var i;
+    for(i = arr.length - 1; i >= 0 && i> arr.length -6 ; i--) {
+        out += '<li><a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a></li>';
+    }
+    out += "</ul>";
+    document.getElementById("rep").innerHTML = out;
+}
+</script>
+<!-- for responsive menu -->
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#menu').slicknav();
@@ -111,6 +133,7 @@ $(document).ready(function(){
     minSlides: 2,
     slideMargin: 20
   });
+
 });
 </script>
 </body>

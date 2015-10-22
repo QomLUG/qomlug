@@ -708,7 +708,6 @@ padding: 10px;
 
 header img {
     position: relative;
-    display: block;
     margin: auto;
     /*margin-top: 53px;*/
     width: 68px;
@@ -719,8 +718,13 @@ header img {
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
-	font-size: 1.8rem;
+	font-size: 2.8rem;
 }
+header span {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
 /**
  * 11.0 Widgets
  */
@@ -759,16 +763,16 @@ header img {
 .main p,.lmain p,.rmain p {
 	
 	padding: 10px;
+	text-align: justify;
 
 
 }
 
 .rmain, .lmain {
-	box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     padding: 10px;
     width: 98%;
-    
     margin: 0.5%;
     padding-bottom: 99999px;
     margin-bottom: -99999px;
@@ -834,19 +838,20 @@ top:15px;
 background-color:#010101;
 width:100%;
 margin:0 auto;
-height:50px;
-color:#b5b5b5;
-
-}
-
-
-.cpright {
-color:#fff;
-width:100%;
-position:absolute;
-bottom:10px;
+color:#ffffff;
 text-align:center;
+font-size: 1.2rem;
+vertical-align: middle;
 }
+footer span{
+	display:block;
+	vertical-align: middle;
+}
+
+footer img {
+	margin:5px;
+}
+
 /**
  * 14.0 Media
  */
@@ -945,6 +950,11 @@ p > video {
     padding-bottom: 99999px;
     margin-bottom: -99999px;
 }
+
+footer {
+font-size: 1.6rem;
+}
+
 
 }
 
